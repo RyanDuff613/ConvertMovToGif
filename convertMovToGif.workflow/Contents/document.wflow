@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.42</string>
+	<string>492</string>
 	<key>AMApplicationVersion</key>
-	<string>2.9</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -65,7 +65,7 @@
 				<key>CFBundleVersion</key>
 				<string>1.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
-				<true/>
+				<false/>
 				<key>CanShowWhenRun</key>
 				<true/>
 				<key>Category</key>
@@ -86,6 +86,8 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>51A2ABC5-1B88-45EF-BBFE-764E2ED3773C</string>
+				<key>ShowWhenRun</key>
+				<false/>
 				<key>UUID</key>
 				<string>F705D149-80C6-4B63-B6F2-CFF17938F012</string>
 				<key>UnlocalizedApplications</key>
@@ -109,14 +111,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<false/>
+				<true/>
 				<key>location</key>
-				<string>310.500000:164.000000</string>
+				<string>303.000000:280.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -167,11 +169,10 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>source ~/.bash_profile
-
-cd desktop/
-
-gifify  "$@" -o "temp".gif --resize 720:-1</string>
+					<string>cd desktop/
+source ~/.bash_profile
+gifify "$@" -o "temp".gif --resize 720:-1
+</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -231,9 +232,9 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<false/>
 						<key>name</key>
-						<string>source</string>
+						<string>CheckedForUserDefaultShell</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -244,9 +245,9 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<false/>
+						<string></string>
 						<key>name</key>
-						<string>CheckedForUserDefaultShell</string>
+						<string>source</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -284,7 +285,7 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>310.500000:346.000000</string>
+				<string>303.000000:514.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -465,7 +466,7 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>310.500000:387.000000</string>
+				<string>303.000000:555.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -575,7 +576,7 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>310.500000:428.000000</string>
+				<string>303.000000:596.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -641,52 +642,52 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 					<string>com.apple.cocoa.path</string>
 					<key>predicate</key>
 					<data>
-					YnBsaXN0MDDUAQIDBAUGentYJHZlcnNpb25Y
-					JG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGG
-					oK8QHgcIDxUdJygqMTU6Oz5CRktMT1VZXWJn
-					a25vcnN1d1UkbnVsbNMJCgsMDQ5fEBdOU0Nv
-					bXBvdW5kUHJlZGljYXRlVHlwZV8QD05TU3Vi
-					cHJlZGljYXRlc1YkY2xhc3MQAYACgB3SEAsR
-					FFpOUy5vYmplY3RzohITgAOAFIAc1AsWFxgZ
-					GhscXxARTlNSaWdodEV4cHJlc3Npb25fEBBO
-					U0xlZnRFeHByZXNzaW9uXxATTlNQcmVkaWNh
-					dGVPcGVyYXRvcoATgA6ABIAR1R4fICELIiMk
-					JSZZTlNPcGVyYW5kXk5TU2VsZWN0b3JOYW1l
-					XxAQTlNFeHByZXNzaW9uVHlwZVtOU0FyZ3Vt
-					ZW50c4AGgAUQA4AIgA1cdmFsdWVGb3JLZXk6
-					0iALDCmAB9IrLC0uWiRjbGFzc25hbWVYJGNs
-					YXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy0v
-					MFxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAsy
-					NKEzgAmADNMLIDY3ODlZTlNLZXlQYXRogAsQ
-					CoAKVG5hbWXSKyw8PV8QHE5TS2V5UGF0aFNw
-					ZWNpZmllckV4cHJlc3Npb26jPC8w0issP0Be
-					TlNNdXRhYmxlQXJyYXmjP0EwV05TQXJyYXnS
-					KyxDRF8QE05TS2V5UGF0aEV4cHJlc3Npb26k
-					Q0UvMF8QFE5TRnVuY3Rpb25FeHByZXNzaW9u
-					00cgC0hJSl8QD05TQ29uc3RhbnRWYWx1ZYAP
-					EACAEFR0ZW1w0issTU5fEBlOU0NvbnN0YW50
-					VmFsdWVFeHByZXNzaW9uo00vMNQLUFFSU0kk
-					VFpOU01vZGlmaWVyV05TRmxhZ3NeTlNPcGVy
-					YXRvclR5cGWAEhBj0issVldfEBVOU0luUHJl
-					ZGljYXRlT3BlcmF0b3KjVlgwXxATTlNQcmVk
-					aWNhdGVPcGVyYXRvctIrLFpbXxAVTlNDb21w
-					YXJpc29uUHJlZGljYXRlo1pcMFtOU1ByZWRp
-					Y2F0ZdQLFhcYGV9gYYATgBmAFYAb1R4fICEL
-					IiMkZSaABoAFgBaADdIQC2g0oWmAF4AM0wsg
-					Njc4bYALgBhdZmlsZUV4dGVuc2lvbtNHIAtw
-					SUqAGoAQU2dpZtQLUFFSU0kkVIAS0issQXai
-					QTDSKyx4eV8QE05TQ29tcG91bmRQcmVkaWNh
-					dGWjeFwwXxAPTlNLZXllZEFyY2hpdmVy0Xx9
-					VHJvb3SAAQAIABEAGgAjAC0AMgA3AFgAXgBl
-					AH8AkQCYAJoAnACeAKMArgCxALMAtQC3AMAA
-					1ADnAP0A/wEBAQMBBQEQARoBKQE8AUgBSgFM
-					AU4BUAFSAV8BZAFmAWsBdgF/AZIBlgGjAawB
-					sQGzAbUBtwG+AcgBygHMAc4B0wHYAfcB+wIA
-					Ag8CEwIbAiACNgI7AlICWQJrAm0CbwJxAnYC
-					ewKXApsCpAKvArcCxgLIAsoCzwLnAusDAQMG
-					Ax4DIgMuAzcDOQM7Az0DPwNKA0wDTgNQA1ID
-					VwNZA1sDXQNkA2YDaAN2A30DfwOBA4UDjgOQ
-					A5UDmAOdA7MDtwPJA8wD0QAAAAAAAAIBAAAA
+					YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25Z
+					JGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGG
+					oF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290
+					gAGvEB4LDBMZISssLjU5Pj9CRkpPUFNZXWFm
+					a29yc3Z3eXtVJG51bGzTDQ4PEBESXxAXTlND
+					b21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1
+					YnByZWRpY2F0ZXNWJGNsYXNzEAGAAoAd0hQP
+					FRhaTlMub2JqZWN0c6IWF4ADgBSAHNQPGhsc
+					HR4fIF8QEU5TUmlnaHRFeHByZXNzaW9uXxAQ
+					TlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGlj
+					YXRlT3BlcmF0b3KAE4AOgASAEdUiIyQlDyYn
+					KCkqWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFt
+					ZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1
+					bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5
+					OtIkDxAtgAfSLzAxMlokY2xhc3NuYW1lWCRj
+					bGFzc2VzXxAQTlNTZWxmRXhwcmVzc2lvbqMx
+					MzRcTlNFeHByZXNzaW9uWE5TT2JqZWN00hQP
+					NjihN4AJgAzTDyQ6Ozw9WU5TS2V5UGF0aIAL
+					EAqAClRuYW1l0i8wQEFfEBxOU0tleVBhdGhT
+					cGVjaWZpZXJFeHByZXNzaW9uo0AzNNIvMENE
+					Xk5TTXV0YWJsZUFycmF5o0NFNFdOU0FycmF5
+					0i8wR0hfEBNOU0tleVBhdGhFeHByZXNzaW9u
+					pEdJMzRfEBROU0Z1bmN0aW9uRXhwcmVzc2lv
+					btNLJA9MTU5fEA9OU0NvbnN0YW50VmFsdWWA
+					DxAAgBBUdGVtcNIvMFFSXxAZTlNDb25zdGFu
+					dFZhbHVlRXhwcmVzc2lvbqNRMzTUD1RVVldN
+					KFhaTlNNb2RpZmllcldOU0ZsYWdzXk5TT3Bl
+					cmF0b3JUeXBlgBIQY9IvMFpbXxAVTlNJblBy
+					ZWRpY2F0ZU9wZXJhdG9yo1pcNF8QE05TUHJl
+					ZGljYXRlT3BlcmF0b3LSLzBeX18QFU5TQ29t
+					cGFyaXNvblByZWRpY2F0ZaNeYDRbTlNQcmVk
+					aWNhdGXUDxobHB1jZGWAE4AZgBWAG9UiIyQl
+					DyYnKGkqgAaABYAWgA3SFA9sOKFtgBeADNMP
+					JDo7PHGAC4AYXWZpbGVFeHRlbnNpb27TSyQP
+					dE1OgBqAEFNnaWbUD1RVVldNKFiAEtIvMEV6
+					okU00i8wfH1fEBNOU0NvbXBvdW5kUHJlZGlj
+					YXRlo3xgNAAIABEAGgAkACkAMgA3AEkATABR
+					AFMAdAB6AIEAmwCtALQAtgC4ALoAvwDKAM0A
+					zwDRANMA3ADwAQMBGQEbAR0BHwEhASwBNgFF
+					AVgBZAFmAWgBagFsAW4BewGAAYIBhwGSAZsB
+					rgGyAb8ByAHNAc8B0QHTAdoB5AHmAegB6gHv
+					AfQCEwIXAhwCKwIvAjcCPAJSAlcCbgJ1AocC
+					iQKLAo0CkgKXArMCtwLAAssC0wLiAuQC5gLr
+					AwMDBwMdAyIDOgM+A0oDUwNVA1cDWQNbA2YD
+					aANqA2wDbgNzA3UDdwN5A4ADggOEA5IDmQOb
+					A50DoQOqA6wDsQO0A7kDzwAAAAAAAAIBAAAA
 					AAAAAH4AAAAAAAAAAAAAAAAAAAPT
 					</data>
 					<key>searchPath</key>
@@ -766,7 +767,7 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>310.500000:469.000000</string>
+				<string>303.000000:637.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Find Finder Items 2.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1252,7 +1253,7 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>310.500000:510.000000</string>
+				<string>303.000000:678.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1362,7 +1363,7 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>310.500000:551.000000</string>
+				<string>303.000000:719.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1435,54 +1436,54 @@ gifify  "$@" -o "temp".gif --resize 720:-1</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2E97FE54-FD18-4451-B5DE-974AF5D9C696</key>
+		<key>12175C39-3D5A-435E-8DDF-DA5D7E5650D7</key>
 		<dict>
 			<key>from</key>
-			<string>AEF9C39D-5A4F-449D-8105-E35D3C7A1AB4 - AEF9C39D-5A4F-449D-8105-E35D3C7A1AB4</string>
+			<string>2DBD735F-4943-4A62-ADDF-14C066B8E4C6 - 2DBD735F-4943-4A62-ADDF-14C066B8E4C6</string>
 			<key>to</key>
-			<string>37E9AA2E-5230-4106-8BF0-262D90F71468 - 37E9AA2E-5230-4106-8BF0-262D90F71468</string>
+			<string>5720D0D1-4B3E-47EB-96CC-82D93C2FA693 - 5720D0D1-4B3E-47EB-96CC-82D93C2FA693</string>
 		</dict>
-		<key>30E01430-F2CC-4F27-98DD-80091DC4A4B8</key>
+		<key>1FF7BD92-5CC0-49EC-BF0A-908C293DF36F</key>
 		<dict>
 			<key>from</key>
 			<string>F705D149-80C6-4B63-B6F2-CFF17938F012 - F705D149-80C6-4B63-B6F2-CFF17938F012</string>
 			<key>to</key>
 			<string>2DBD735F-4943-4A62-ADDF-14C066B8E4C6 - 2DBD735F-4943-4A62-ADDF-14C066B8E4C6</string>
 		</dict>
-		<key>368F90A5-DE6A-4CC0-A74A-46864379BDC3</key>
+		<key>43F3B073-475D-4CC6-A238-27CCCF5AE4F0</key>
 		<dict>
 			<key>from</key>
 			<string>1C7C7172-A720-47B6-9727-0442425EFD7F - 1C7C7172-A720-47B6-9727-0442425EFD7F</string>
 			<key>to</key>
 			<string>879B1517-3938-432B-82F4-C531990279C5 - 879B1517-3938-432B-82F4-C531990279C5</string>
 		</dict>
-		<key>4E706F33-9E6D-485F-81AF-4D5303DC154C</key>
+		<key>473E0A6A-5CF9-4903-901E-B213E03AEFDB</key>
 		<dict>
 			<key>from</key>
-			<string>2DBD735F-4943-4A62-ADDF-14C066B8E4C6 - 2DBD735F-4943-4A62-ADDF-14C066B8E4C6</string>
-			<key>to</key>
 			<string>5720D0D1-4B3E-47EB-96CC-82D93C2FA693 - 5720D0D1-4B3E-47EB-96CC-82D93C2FA693</string>
-		</dict>
-		<key>8FCC1FC7-9163-49BB-A269-E81E444E13BF</key>
-		<dict>
-			<key>from</key>
-			<string>5C1D0054-A93B-4FCE-B8A5-D96AB8EEB223 - 5C1D0054-A93B-4FCE-B8A5-D96AB8EEB223</string>
 			<key>to</key>
-			<string>1C7C7172-A720-47B6-9727-0442425EFD7F - 1C7C7172-A720-47B6-9727-0442425EFD7F</string>
+			<string>AEF9C39D-5A4F-449D-8105-E35D3C7A1AB4 - AEF9C39D-5A4F-449D-8105-E35D3C7A1AB4</string>
 		</dict>
-		<key>A3159993-72AC-4FEE-A052-B10652681564</key>
+		<key>80AAAB2D-A356-4D0B-AB4E-A2F5DFD2C699</key>
 		<dict>
 			<key>from</key>
 			<string>37E9AA2E-5230-4106-8BF0-262D90F71468 - 37E9AA2E-5230-4106-8BF0-262D90F71468</string>
 			<key>to</key>
 			<string>5C1D0054-A93B-4FCE-B8A5-D96AB8EEB223 - 5C1D0054-A93B-4FCE-B8A5-D96AB8EEB223</string>
 		</dict>
-		<key>DB3F8E42-46D5-4B02-9462-AA7B2C0B127C</key>
+		<key>9ADF0FF9-1285-41C7-B271-87E2A7DC47AE</key>
 		<dict>
 			<key>from</key>
-			<string>5720D0D1-4B3E-47EB-96CC-82D93C2FA693 - 5720D0D1-4B3E-47EB-96CC-82D93C2FA693</string>
+			<string>5C1D0054-A93B-4FCE-B8A5-D96AB8EEB223 - 5C1D0054-A93B-4FCE-B8A5-D96AB8EEB223</string>
 			<key>to</key>
+			<string>1C7C7172-A720-47B6-9727-0442425EFD7F - 1C7C7172-A720-47B6-9727-0442425EFD7F</string>
+		</dict>
+		<key>DB8B3AE3-0F36-4857-B618-0CB76F178AD7</key>
+		<dict>
+			<key>from</key>
 			<string>AEF9C39D-5A4F-449D-8105-E35D3C7A1AB4 - AEF9C39D-5A4F-449D-8105-E35D3C7A1AB4</string>
+			<key>to</key>
+			<string>37E9AA2E-5230-4106-8BF0-262D90F71468 - 37E9AA2E-5230-4106-8BF0-262D90F71468</string>
 		</dict>
 	</dict>
 	<key>variables</key>
